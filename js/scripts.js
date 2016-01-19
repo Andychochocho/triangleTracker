@@ -3,9 +3,9 @@ var triangle_tracker = function(sideA, sideB, sideC) {
   return true;
 } else if ((sideA !== sideB) && (sideB !== sideC)) {
   return true;
-} else if ((sideA === sideB) || (sideC === sideB) || (sideA === sideC)) {
-  return false;
 } else if ((sideA === sideB) && (sideB === sideC)) {
+    return true;
+} else if ((sideA === sideB) || (sideC === sideB) || (sideA === sideC)) {
   return true;
 }
 }
